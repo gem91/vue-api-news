@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <div v-for="job in jobs">{{ job.title }}</div>
-  </div>
+  <ul class="lists">
+    <li v-for="job in jobs" :key="job">{{ job.title }}</li>
+  </ul>
 </template>
 
 <script>
@@ -21,5 +21,6 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+  @import "./contents.css";
 </style>

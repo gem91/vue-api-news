@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <div v-for="user in users">{{ user.title }}</div>
-  </div>
+  <ul class="lists">
+    <li v-for="user in users" :key="user">{{ user.title }}</li>
+  </ul>
 </template>
 
 <script>
@@ -21,5 +21,6 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+  @import "./contents.css";
 </style>
